@@ -5,7 +5,7 @@ import gitLogo from "../assets/gitLogo.png";
 
 const Navbar = () => {
   return (
-    <div className="w-full mt-5 lg:h-16 flex justify-between items-center">
+    <div className="w-full mt-5 lg:h-16 flex justify-between items-center shadow-sm">
 
             <Link to="/" className="flex justify-between items-center gap-3">
         <img className="lg:ml-15 ml-2 w-10 h-10" src={logo} alt="" />

@@ -9,26 +9,29 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
-    errorElement: <ErrorPage/>,
+    errorElement: <ErrorPage />,
+    hydrateFallbackElement: <div>Loading...</div>,
     children: [
       {
         index: true,
         // path: "/home",
-    element: <Home />,
+        element: <Home />,
+        loader: () => fetch('./gameData.json')
       },
-    {
-    path: "/apps",
-    element: <Apps />,
+      {
+        path: "/apps",
+        element: <Apps />,
+      },
+      {
+        path: "/installation",
+        element: <Installation />,
+      },
+    ],
   },
-{
-    path: "/installation",
-    element: <Installation />,
-  },]
-  },
-    // {
-    //     path: "*",
-    //     element: <ErrorPage/>,
-    // }
+  // {
+  //     path: "*",
+  //     element: <ErrorPage/>,
+  // }
 ]);
 
 export default router;
