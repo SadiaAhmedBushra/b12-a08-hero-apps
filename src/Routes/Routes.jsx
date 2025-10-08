@@ -4,6 +4,7 @@ import Home from "../pages/home";
 import MainLayout from "../Layouts/MainLayout";
 import Installation from "../pages/Installation";
 import ErrorPage from "../pages/ErrorPage";
+import GameDetails from "../pages/GameDetails";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +17,6 @@ const router = createBrowserRouter([
         index: true,
         // path: "/home",
         element: <Home />,
-        loader: () => fetch('./gameData.json')
       },
       {
         path: "/apps",
@@ -25,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/installation",
         element: <Installation />,
+      },
+      {
+        path: "/game/:id",
+        element: <GameDetails />,
       },
     ],
   },

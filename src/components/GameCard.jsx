@@ -1,10 +1,12 @@
 import React from "react";
+import { Link, NavLink } from "react-router";
 import iconDownloads from "../assets/icon-downloads.png";
 import iconStar from "../assets/icon-ratings.png";
 
 const GameCard = ({ game }) => {
+  // const [image, title, downloads, ratingAvg, id] = game;
   return (
-    <div className="card bg-base-100 w-[320px] shadow-sm hover:scale-105 transition ease-in-out">
+    <Link to={`/game/${game.id}`} className="card bg-base-100 w-[320px] shadow-sm hover:scale-105 transition ease-in-out">
       <figure className="px-5 pt-5 h-48 overflow-hidden">
         <img className="w-full object-cover rounded-lg"
           src={game.image}
@@ -24,7 +26,7 @@ const GameCard = ({ game }) => {
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

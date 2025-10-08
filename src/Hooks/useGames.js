@@ -9,7 +9,7 @@ const useGames = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios('./gameData.json')
+    axios('../gameData.json')
     .then((data) => setGames(data.data))
     .catch((err) => setError(err))
     .finally(() => setLoading(false))
