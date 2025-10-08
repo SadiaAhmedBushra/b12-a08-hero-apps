@@ -4,10 +4,13 @@ import appStoreLogo from "../assets/appStore.png";
 import heroImg from "../assets/hero.png";
 import { Link, useLoaderData } from "react-router";
 import GameCard from "../components/GameCard";
+import useGames from "../Hooks/useGames";
 
 const Home = () => {
-  const games = useLoaderData();
-  console.log(games);
+  // const games = useLoaderData();
+  const {games, error, loading} = useGames();
+
+  const featuredGames = games.slice(0, 8); 
   return (
     <div>
       <div className="w-11/12 mx-auto text-center mt-10 lg:mt-20 ">
@@ -95,9 +98,9 @@ const Home = () => {
 
         {/* APP CARDS */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-10">
-          {games.map((game) => (
+          {featuredGames.map((game) => (
             // <h1 key={game.id}>{game.title}</h1>
-            <GameCard game={game}></GameCard>
+            <GameCard key={game.id} game={game}></GameCard>
           ))}
           
         </div>
