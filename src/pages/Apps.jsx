@@ -1,16 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import useGames from "../Hooks/useGames";
 import GameCard from "../components/GameCard";
 import searchImg from "../assets/search.png";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const Apps = () => {
-  const { games } = useGames();
+  const { games, loading } = useGames();
   const [search, setSearch] = useState("");
+
+  const [searching, setSearching] = useState(false);
 
   const term = search.trim().toLowerCase();
   const searchedGames = term
     ? games.filter((game) => game.title.toLowerCase().includes(term))
     : games;
+
+  useEffect(() => {
+    if (!term) return;
+
+    setSearching(true);
+    const timer = setTimeout(() => {
+      setSearching(false);
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, [term]);
+
+  const isLoading = loading || searching;
 
   return (
     <div className="w-11/12 mx-auto mt-10 lg:mt-20">
@@ -39,14 +55,16 @@ const Apps = () => {
         </label>
       </div>
 
-      {searchedGames.length === 0 ? (
+      {isLoading ? (
+        <LoadingSpinner count={15} />
+      ) : searchedGames.length === 0 ? (
         <p className="text-center text-2xl text-gray-500 my-10">
           No App Found!
         </p>
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-10 mx-auto">
           {searchedGames.map((game) => (
-            <GameCard key={game.id} game={game}></GameCard>
+            <GameCard key={game.id} game={game} />
           ))}
         </div>
       )}

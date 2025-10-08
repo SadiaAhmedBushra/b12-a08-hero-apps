@@ -5,12 +5,13 @@ import heroImg from "../assets/hero.png";
 import { Link, useLoaderData } from "react-router";
 import GameCard from "../components/GameCard";
 import useGames from "../Hooks/useGames";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const Home = () => {
   // const games = useLoaderData();
-  const {games, error, loading} = useGames();
+  const { games, error, loading } = useGames();
 
-  const featuredGames = games.slice(0, 8); 
+  const featuredGames = games.slice(0, 8);
   return (
     <div>
       <div className="w-11/12 mx-auto text-center mt-10 lg:mt-20 ">
@@ -97,18 +98,21 @@ const Home = () => {
         </p>
 
         {/* APP CARDS */}
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-10">
-          {featuredGames.map((game) => (
-            // <h1 key={game.id}>{game.title}</h1>
-            <GameCard key={game.id} game={game}></GameCard>
-          ))}
-          
-        </div>
-       <button className="gradient-bg mt-8 py-3 px-9 lg:mr-15 rounded-md hover:bg-white text-white font-semibold">
-              <Link to="/apps">
-                Show All
-              </Link>
-            </button>
+
+        {loading ? (
+          <LoadingSpinner></LoadingSpinner>
+        ) : (
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-10">
+            {featuredGames.map((game) => (
+              // <h1 key={game.id}>{game.title}</h1>
+              <GameCard key={game.id} game={game}></GameCard>
+            ))}
+          </div>
+        )}
+
+        <button className="gradient-bg mt-8 py-3 px-9 lg:mr-15 rounded-md hover:bg-white text-white font-semibold">
+          <Link to="/apps">Show All</Link>
+        </button>
       </div>
     </div>
   );
