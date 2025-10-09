@@ -6,10 +6,17 @@ import { Link, useLoaderData } from "react-router";
 import GameCard from "../components/GameCard";
 import useGames from "../Hooks/useGames";
 import LoadingSpinner from "../components/LoadingSpinner";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; 
 
 const Home = () => {
   // const games = useLoaderData();
   const { games, error, loading } = useGames();
+
+    if (loading) {
+  return <LoadingSpinner  count={1}/>;
+}
+
 
   const featuredGames = games.slice(0, 8);
   return (

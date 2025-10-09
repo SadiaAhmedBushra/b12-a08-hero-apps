@@ -5,6 +5,8 @@ import MainLayout from "../Layouts/MainLayout";
 import Installation from "../pages/Installation";
 import ErrorPage from "../pages/ErrorPage";
 import GameDetails from "../pages/GameDetails";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; 
 
 const router = createBrowserRouter([
   {

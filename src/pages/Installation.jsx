@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import iconDownloads from "../assets/icon-downloads.png";
 import iconStar from "../assets/icon-ratings.png";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css"; 
+import useGames from "../Hooks/useGames";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
@@ -23,6 +27,11 @@ const Installation = () => {
     }
   })();
 
+  const { games, loading, error } = useGames();
+
+    if (loading) {
+  return <LoadingSpinner  count={1}/>;
+}
 
   const handleUninstall = (id) => {
     const existingList = JSON.parse(localStorage.getItem("installedApps"));
@@ -30,6 +39,8 @@ const Installation = () => {
 
     setInstalledApps(updatedList)
     localStorage.setItem("installedApps", JSON.stringify(updatedList));
+    toast.success("App uninstalled successfully!");
+
   };
   return (
     <div className="w-11/12 mx-auto mt-10 lg:mt-20">
@@ -96,6 +107,7 @@ const Installation = () => {
           </div>
         </div>
       ))}
+       <ToastContainer position="top-right" autoClose={2000} hideProgressBar />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import useGames from "../Hooks/useGames";
 import GameCard from "../components/GameCard";
 import searchImg from "../assets/search.png";
+import appErrorImg from "../assets/App-Error.png"
 import LoadingSpinner from "../components/LoadingSpinner";
 
 const Apps = () => {
@@ -21,7 +22,7 @@ const Apps = () => {
     setSearching(true);
     const timer = setTimeout(() => {
       setSearching(false);
-    }, 100);
+    }, 250);
 
     return () => clearTimeout(timer);
   }, [term]);
@@ -58,9 +59,10 @@ const Apps = () => {
       {isLoading ? (
         <LoadingSpinner count={15} />
       ) : searchedGames.length === 0 ? (
-        <p className="text-center text-2xl text-gray-500 my-10">
-          No App Found!
-        </p>
+        <div className="w-2/5 mt-10 mx-auto border gradient-border">
+          <img className="mx-auto mt-10" src={appErrorImg} alt="" />
+          <p className="text-center text-2xl text-gray-500 my-10">No App Found!</p>
+        </div>
       ) : (
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-10 mx-auto">
           {searchedGames.map((game) => (
