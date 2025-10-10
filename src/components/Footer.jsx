@@ -5,24 +5,24 @@ import { HiOutlineMail } from "react-icons/hi";
 
 const Footer = () => {
   return (
-    <footer className="footer footer-horizontal bg-[#001931] text-white mt-20 p-10">
+    <footer className="footer footer-horizontal bg-[#001931] text-white p-10">
       <div className="w-11/12 mx-auto flex flex-col justify-between items-center gap-5 my-5">
-        <div className="flex flex-col lg:flex-row justify-between items-center">
-         
-          <div className="lg:w-2/3 flex flex-col items-start gap-3">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
+          <div className="lg:w-2/3 flex flex-col items-center lg:items-start gap-3">
             <h1 className="text-3xl">About Us</h1>
             <p className="text-justify">
-              GameVault is a leading platform dedicated to bringing the best
-              gaming experiences to players worldwide. We specialize in
-              discovering, reviewing, and sharing top-quality games for all
-              types of gamers. Our team is passionate about gaming and committed
-              to providing accurate insights and recommendations.We focus on
-              fostering a vibrant community where players can connect, learn,
-              and grow together. At GameVault, our mission is to make gaming
-              enjoyable, accessible, and engaging for everyone.
+              ProVault is your ultimate destination for discovering and
+              downloading the best productivity apps. We curate and recommend
+              tools designed to help you work smarter, stay organized, and
+              achieve more every day. Our mission is to simplify your digital
+              life by connecting you with high-quality, trusted, and efficient
+              apps. At ProVault, we believe productivity should be effortless —
+              that’s why we bring everything you need into one place. Whether
+              you’re a student, professional, or entrepreneur, ProVault empowers
+              you to unlock your full potential.
             </p>
             <nav>
-              <div className="flex flex-row gap-4 mt-5">
+              <div className="flex flex-row  gap-4 mt-5">
                 <a>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -60,7 +60,7 @@ const Footer = () => {
             </nav>
           </div>
 
-          <nav className="flex flex-col gap-4">
+          <nav className="flex flex-col gap-4 items-center lg:items-start">
             <div className="flex flex-row gap-2 items-center">
               <IoCallOutline />
               <p className="link link-hover">+8803463467888</p>
@@ -82,7 +82,7 @@ const Footer = () => {
         <aside>
           <p className="text-center">
             Copyright © {new Date().getFullYear()} - All right reserved by
-            GameVault Ltd
+            ProVault Ltd
           </p>
         </aside>
       </div>

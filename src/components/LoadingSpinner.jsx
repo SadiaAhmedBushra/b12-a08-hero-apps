@@ -2,7 +2,7 @@ import React from "react";
 
 const LoadingSpinner = ({ count = 8 }) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 mt-10 mx-auto">
+    <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 my-10 mx-auto">
       {Array.from({ length: count }).map((__, i) => (
         <div key={i} className="flex justify-center items-center w-80 flex-col gap-4 mx-auto">
           <div className="skeleton h-32 w-full"></div>

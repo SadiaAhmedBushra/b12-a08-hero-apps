@@ -1,0 +1,290 @@
+[
+  {
+    "image": "https://i.ibb.co.com/Dg9qgCx0/todoist-logo.png",
+    "title": "Todoist",
+    "companyName": "Doist",
+    "id": 1,
+    "description": "Todoist is a powerful task management app designed to help users organize, prioritize, and track their daily work efficiently. Its intuitive interface allows creating projects, setting deadlines, and breaking tasks into subtasks for better clarity and control.\n\nWith real-time collaboration, Todoist enables teams to work together seamlessly, assign tasks, and monitor progress. Productivity trends and visual charts provide insights into personal and team performance, helping identify areas for improvement.\n\nWhether for personal organization or professional projects, Todoist ensures that important tasks never fall through the cracks. Its cross-platform availability and integrations with popular tools make it a reliable companion for maintaining focus and consistency.",
+    "size": 50,
+    "reviews": 50000,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 28000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/gbTcwdn3/Evernote-Logo.png",
+    "title": "Evernote",
+    "companyName": "Evernote Corporation",
+    "id": 2,
+    "description": "Evernote is a versatile note-taking application that helps users capture ideas, memos, and to-dos in a single, organized workspace. Notes can include text, images, audio, and attachments, making it suitable for diverse personal and professional use. Advanced organization features like notebooks, tags, and search functionality allow users to find information quickly and efficiently. Cloud synchronization ensures seamless access across devices, whether mobile, desktop, or web. Evernote also supports collaboration, enabling sharing and editing of notes with colleagues or friends. With its combination of flexibility, accessibility, and organization, it empowers users to manage knowledge and tasks effectively.",
+    "size": 80,
+    "reviews": 75000,
+    "ratingAvg": 4.5,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 7000 },
+      { "name": "4 star", "count": 22000 },
+      { "name": "5 star", "count": 41000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/nMLdmykz/Notion-Logo-Vector.png",
+    "title": "Notion",
+    "companyName": "Notion Labs",
+    "id": 3,
+    "description": "Notion is an all-in-one workspace that combines note-taking, task management, databases, and collaboration tools in a single platform. Users can design customized workflows to suit both personal and team needs, enhancing organization and efficiency.\n\nIts flexible interface supports pages, tables, boards, and calendars, allowing users to structure information visually and intuitively. Collaborative features enable team members to edit, comment, and share resources in real-time.\n\nNotion’s integration with other productivity tools and its robust template library make it suitable for a wide range of projects. By centralizing tasks and knowledge, it reduces clutter and helps users maintain clarity and focus.",
+    "size": 90,
+    "reviews": 120000,
+    "ratingAvg": 4.8,
+    "downloads": 20000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 6000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 85000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/9HCgjykj/slack.png",
+    "title": "Slack",
+    "companyName": "Slack Technologies",
+    "id": 4,
+    "description": "Slack is a leading team communication and collaboration platform that centralizes messaging, file sharing, and workflow integrations. Channels, direct messages, and threads organize discussions efficiently, ensuring teams stay aligned. The platform integrates with numerous apps, including Google Drive, Zoom, and Trello, to streamline workflows and reduce context-switching. Real-time notifications and search functionality help users stay informed without losing track of critical information. Slack enhances productivity by reducing email overload and promoting transparent communication. Its mobile and desktop applications ensure that teams can collaborate effectively anytime, anywhere.",
+    "size": 120,
+    "reviews": 95000,
+    "ratingAvg": 4.6,
+    "downloads": 18000000,
+    "ratings": [
+      { "name": "1 star", "count": 4000 },
+      { "name": "2 star", "count": 3000 },
+      { "name": "3 star", "count": 8000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 50000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/yBQhsm63/Trello-Emblem.png",
+    "title": "Trello",
+    "companyName": "Atlassian",
+    "id": 5,
+    "description": "Trello is a visual project management tool that helps users organize tasks, projects, and workflows through boards, lists, and cards. Its intuitive drag-and-drop interface makes it easy to plan, prioritize, and track progress. Users can attach files, set deadlines, assign team members, and use labels to categorize tasks. Power-ups and integrations extend functionality, connecting Trello to tools like Slack, Google Drive, and Jira. Ideal for agile workflows, personal projects, or team management, Trello simplifies complex processes into a visual, organized format. It promotes accountability, collaboration, and clarity in managing tasks effectively.",
+    "size": 75,
+    "reviews": 60000,
+    "ratingAvg": 4.5,
+    "downloads": 12000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 31000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/hFxYzTd5/google-keep-icon-logo-symbol-free-png.webp",
+    "title": "Google Keep",
+    "companyName": "Google",
+    "id": 6,
+    "description": "Google Keep is a lightweight note-taking app that allows users to quickly capture ideas, create checklists, and set reminders. Its minimal design ensures ease of use while maintaining organizational efficiency. Notes are synced across devices, making them accessible from mobile, desktop, or web. Labels, color-coding, and reminders help prioritize and categorize information for quick retrieval. With collaboration features, users can share notes with others and make real-time updates. Google Keep is ideal for individuals seeking a fast, simple, and synchronized productivity tool.",
+    "size": 30,
+    "reviews": 100000,
+    "ratingAvg": 4.4,
+    "downloads": 25000000,
+    "ratings": [
+      { "name": "1 star", "count": 5000 },
+      { "name": "2 star", "count": 4000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 40000 },
+      { "name": "5 star", "count": 51000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/qYrbgRDT/asana.png",
+    "title": "Asana",
+    "companyName": "Asana, Inc.",
+    "id": 7,
+    "description": "Asana is a comprehensive work management platform that enables teams to plan, organize, and track projects from start to finish. It supports task assignments, project timelines, and workflow automation to increase efficiency. The platform includes features like boards, calendars, and reporting dashboards to visualize project progress. Integration with tools such as Slack, Outlook, and Google Drive enhances productivity. Asana empowers teams to collaborate effectively, ensuring deadlines are met and goals are achieved. Its combination of organization, visibility, and tracking makes it suitable for both small teams and large enterprises.",
+    "size": 110,
+    "reviews": 85000,
+    "ratingAvg": 4.6,
+    "downloads": 17000000,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 7000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 50000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/1xgbv0S/mstodo.png",
+    "title": "Microsoft To Do",
+    "companyName": "Microsoft",
+    "id": 8,
+    "description": "Microsoft To Do is a task management application that helps users organize their daily activities efficiently. Users can create lists, set reminders, and prioritize tasks to maintain focus and productivity. Integration with Microsoft 365, including Outlook and Teams, ensures seamless workflow across apps. Customizable themes and smart suggestions improve usability and personalization. Ideal for both personal and professional use, Microsoft To Do promotes organization, accountability, and effective time management. Its cross-platform sync guarantees access to tasks on any device.",
+    "size": 45,
+    "reviews": 90000,
+    "ratingAvg": 4.5,
+    "downloads": 16000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 6000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 51000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/5xk2SZL9/16ab9ab041a13ed25270e36c8f5c954e179b50301ccd0c033004209584aad621-200.webp",
+    "title": "Forest",
+    "companyName": "Seekrtech",
+    "id": 9,
+    "description": "Forest is a focus and productivity app that encourages users to stay off their phones by planting virtual trees. Each focused session grows a tree, creating a visual representation of your accomplishments. The app uses Pomodoro-based timers to structure work sessions and breaks. Users can track their focus habits and see their progress over time, fostering disciplined work behavior. Forest also supports real-world tree planting initiatives, adding an environmental purpose to productivity. It is ideal for students and professionals seeking focus while promoting mindfulness.",
+    "size": 55,
+    "reviews": 70000,
+    "ratingAvg": 4.7,
+    "downloads": 13000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 42500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/qL2VgWx3/rescuetime.jpg",
+    "title": "RescueTime",
+    "companyName": "RescueTime, Inc.",
+    "id": 10,
+    "description": "RescueTime is a productivity tracking tool that monitors app usage and time spent on tasks. It provides detailed reports to help users identify time-wasting activities and improve focus. With automated tracking, goal-setting, and distraction alerts, RescueTime helps users optimize their workday. Insights into digital habits enable smarter planning and time management. The app is suitable for individuals and teams looking to enhance efficiency and focus. By making digital behavior visible, RescueTime empowers users to achieve better productivity.",
+    "size": 40,
+    "reviews": 60000,
+    "ratingAvg": 4.4,
+    "downloads": 11000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 20000 },
+      { "name": "5 star", "count": 32500 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/nNSgkqB1/clickup1.png",
+    "title": "ClickUp",
+    "companyName": "Mango Technologies",
+    "id": 11,
+    "description": "ClickUp is an all-in-one productivity platform that consolidates tasks, documents, goals, and communication in a single workspace. It is highly customizable to fit both personal and team workflows. Features include task dependencies, time tracking, dashboards, and automation to improve efficiency. Integrations with tools like Slack, GitHub, and Google Workspace make it versatile for any workflow. ClickUp is ideal for users seeking centralized work management, reducing app switching and enhancing team collaboration. Its flexibility and scalability support efficient project execution.",
+    "size": 100,
+    "reviews": 85000,
+    "ratingAvg": 4.6,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 7000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 50000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/BVbVNy88/2022-01-21-ts3-thumbs-67b.webp",
+    "title": "Notability",
+    "companyName": "Ginger Labs",
+    "id": 12,
+    "description": "Notability is a note-taking app that combines handwriting, typing, sketches, and audio recordings. It is designed to help students and professionals capture ideas and organize notes effectively. With PDF annotation, multi-note support, and audio syncing, users can study, review, and collaborate seamlessly. Organization tools like subjects and dividers keep notes structured. Notability enhances productivity by providing a versatile platform for learning and work. Its intuitive interface and feature-rich environment make note management effortless.",
+    "size": 70,
+    "reviews": 55000,
+    "ratingAvg": 4.5,
+    "downloads": 9000000,
+    "ratings": [
+      { "name": "1 star", "count": 1500 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 4000 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 33000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/r2W9KykX/Good-Notes.jpg",
+    "title": "GoodNotes",
+    "companyName": "Time Base Technology",
+    "id": 13,
+    "description": "GoodNotes is a digital notebook app that enables note-taking, PDF annotation, and document organization. Its flexible interface allows users to create customized notebooks for various purposes. Handwriting recognition and search functions make notes easily accessible. Users can import documents, highlight, and annotate with precision, supporting both study and professional work. GoodNotes promotes structured, efficient learning and work habits. Its synchronization across devices ensures seamless access to notes anytime, anywhere.",
+    "size": 65,
+    "reviews": 50000,
+    "ratingAvg": 4.6,
+    "downloads": 8000000,
+    "ratings": [
+      { "name": "1 star", "count": 1200 },
+      { "name": "2 star", "count": 1000 },
+      { "name": "3 star", "count": 3000 },
+      { "name": "4 star", "count": 15000 },
+      { "name": "5 star", "count": 31000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/xS9RkRLN/xoom2.webp",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications",
+    "id": 14,
+    "description": "Zoom is a leading video conferencing platform that allows individuals and teams to communicate remotely. It supports virtual meetings, webinars, and collaborative sessions with high-quality video and audio. Features like screen sharing, breakout rooms, and recording enhance productivity and interaction. Integration with calendars and scheduling tools simplifies planning and attendance. Zoom is widely used for professional, educational, and personal communication. Its reliability, ease of use, and comprehensive features make remote collaboration seamless.",
+    "size": 120,
+    "reviews": 95000,
+    "ratingAvg": 4.6,
+    "downloads": 20000000,
+    "ratings": [
+      { "name": "1 star", "count": 3000 },
+      { "name": "2 star", "count": 2500 },
+      { "name": "3 star", "count": 7000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 52000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/wZfb0mjZ/gc.gif",
+    "title": "Google Calendar",
+    "companyName": "Google",
+    "id": 15,
+    "description": "Google Calendar is a scheduling app that helps users organize meetings, events, and tasks efficiently. It offers features like reminders, recurring events, and event sharing to streamline planning. Synchronization across devices ensures that schedules are always up to date. Color-coding and multiple calendar support enhance clarity and prioritization. Google Calendar promotes effective time management and coordination. Its integration with other Google services makes it a central hub for organizing personal and professional commitments.",
+    "size": 50,
+    "reviews": 85000,
+    "ratingAvg": 4.5,
+    "downloads": 15000000,
+    "ratings": [
+      { "name": "1 star", "count": 2000 },
+      { "name": "2 star", "count": 1500 },
+      { "name": "3 star", "count": 5000 },
+      { "name": "4 star", "count": 25000 },
+      { "name": "5 star", "count": 33000 }
+    ]
+  },
+  {
+    "image": "https://i.ibb.co.com/Dgp8zxPr/Dropbox-Emblem.png",
+    "title": "Dropbox",
+    "companyName": "Dropbox, Inc.",
+    "id": 16,
+    "description": "Dropbox is a secure cloud storage platform that allows users to store, access, and share files from any device. Its intuitive interface makes file organization simple and efficient for both individuals and teams. Collaboration features such as shared folders, Dropbox Paper, and file requests streamline teamwork and document management. Integration with third-party apps enhances workflow efficiency. Dropbox ensures reliable, scalable, and synchronized access to important data. It helps users maintain productivity while keeping documents safe and organized, making remote work and collaboration effortless.",
+    "size": 100,
+    "reviews": 90000,
+    "ratingAvg": 4.4,
+    "downloads": 18000000,
+    "ratings": [
+      { "name": "1 star", "count": 2500 },
+      { "name": "2 star", "count": 2000 },
+      { "name": "3 star", "count": 6000 },
+      { "name": "4 star", "count": 30000 },
+      { "name": "5 star", "count": 50000 }
+    ]
+  }
+]

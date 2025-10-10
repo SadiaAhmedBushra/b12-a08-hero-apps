@@ -4,7 +4,7 @@ import Home from "../pages/home";
 import MainLayout from "../Layouts/MainLayout";
 import Installation from "../pages/Installation";
 import ErrorPage from "../pages/ErrorPage";
-import GameDetails from "../pages/GameDetails";
+import AppDetails from "../pages/AppDetails";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; 
 
@@ -29,8 +29,8 @@ const router = createBrowserRouter([
         element: <Installation />,
       },
       {
-        path: "/game/:id",
-        element: <GameDetails />,
+        path: "/app/:id",
+        element: <AppDetails />,
       },
     ],
   },

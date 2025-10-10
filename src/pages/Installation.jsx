@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import iconDownloads from "../assets/icon-downloads.png";
 import iconStar from "../assets/icon-ratings.png";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"; 
-import useGames from "../Hooks/useGames";
+import "react-toastify/dist/ReactToastify.css";
+import useApps from "../Hooks/useApps";
 import LoadingSpinner from "../components/LoadingSpinner";
+import ErrorPage from "./ErrorPage";
 
 const Installation = () => {
   const [installedApps, setInstalledApps] = useState([]);
@@ -27,28 +28,32 @@ const Installation = () => {
     }
   })();
 
-  const { games, loading, error } = useGames();
+  const { apps, loading, error } = useApps();
 
-    if (loading) {
-  return <LoadingSpinner  count={1}/>;
-}
+  if (loading) {
+    return <LoadingSpinner count={1} />;
+  }
+
+  if (error) {
+    return <ErrorPage />;
+  }
 
   const handleUninstall = (id) => {
     const existingList = JSON.parse(localStorage.getItem("installedApps"));
     let updatedList = existingList.filter((p) => p.id !== id);
 
-    setInstalledApps(updatedList)
+    setInstalledApps(updatedList);
     localStorage.setItem("installedApps", JSON.stringify(updatedList));
     toast.success("App uninstalled successfully!");
-
   };
   return (
-    <div className="w-11/12 mx-auto mt-10 lg:mt-20">
+    <div className="w-11/12 mx-auto my-10 lg:my-20">
       <h1 className="text-[34px] lg:text-[48px] font-bold text-center my-5">
         Your Installed Apps
       </h1>
       <p className="text-[20px] text-[#627382] text-center mb-5">
-        Explore All Trending Apps on the Market developed by us
+        Manage all your installed productivity apps from one place.
+        Stay organized and make the most out of your tools with ProVault.
       </p>
 
       <div className="flex lg:flex-row flex-col-reverse gap-5 justify-between items-center">
@@ -100,14 +105,17 @@ const Installation = () => {
                 </div>
               </div>
 
-              <button onClick={()=>handleUninstall(a.id)} className="bg-[#00d390] text-white font-semibold p-2 rounded-lg">
+              <button
+                onClick={() => handleUninstall(a.id)}
+                className="bg-[#00d390] text-white font-semibold p-2 rounded-lg"
+              >
                 Uninstall
               </button>
             </div>
           </div>
         </div>
       ))}
-       <ToastContainer position="top-right" autoClose={2000} hideProgressBar />
+      <ToastContainer position="top-right" autoClose={2000} hideProgressBar />
     </div>
   );
 };

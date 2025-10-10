@@ -9,7 +9,7 @@ const ErrorPage = () => {
   return(
     <>
     <Navbar></Navbar>
-    <div className="w-2/5 mt-10 mx-auto border gradient-border">
+    <div className="w-2/5 my-10 mx-auto border gradient-border">
       <p className="text-center my-20 text-4xl gradient-text font-bold">Oops!</p>
       <img className="mx-auto mt-20" src={errorPageImg} alt="" />
       <h1 className="text-center my-20 text-4xl">Page Not Found!</h1>
